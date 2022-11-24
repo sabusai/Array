@@ -1,0 +1,9 @@
+.container{
+    background-color: rgb(215, 148, 61);
+    width: 100%;
+    color:rgb(57, 109, 165);
+}
+.item{
+    margin: auto;
+    width: 250px;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charest="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+    <div class="container">
+    <div class="item"><h1>JavaScript</h1>
+    <h1>Array</h1>
+    </div>
+    <div class="list">
+    <div class="box1">
+    <h2>Find the Product</h2>
+    <pre>
+    const Find_Prod = (array, N) => 
+{
+ let prod = 1;
+array.forEach(item =>{
+  prod *= item;
+});
+return prod;
+ 
+};
+ </pre></div>
+ <div class="box2">
+ <h2>Find the Sum.</h2>
+ <pre>
+ const Find_Sum = (array, N) => 
+{
+let sum = 0;
+array.forEach(item =>{
+  sum += item;
+});
+return sum;
+}
+ </pre>
+ </div>
+ <div class="box3">
+ <h2>Count Occurrences</h2>
+ <pre>
+ const findCount = (N, K, Arr) => 
+{
+ let Count = 0;
+  for(let i = 0; i < N; i++){
+  if(Arr[i]===K){
+  Count += 1;
+  }
+  }
+  return Count;
+};
+</pre>
+ </div>
+ <div class="box4">
+ <h2>Even Odd</h2>
+ <pre>
+ const findEvenOdd = (N, Arr) => 
+{
+  let evenSum = 0;
+  let oddSum = 0;
+  for(let i = 0; i < N; i++){
+  if(Arr[i]%2===0){
+  evenSum += Arr[i];
+  }
+  else{
+  oddSum += Arr[i]
+  }
+  }
+  return [evenSum,oddSum]
+              
+};
+</pre>
+ </div>
+ <div class="box5">
+ <h2>Find whether the number is present or not</h2>
+ <pre>
+ const Find_Num = (array,N,M) => 
+{
+  for(let i=0;i < N;i++){
+  if(array[i]===M){
+  return "YES"
+  }
+  }
+  return "NO"
+};
+</pre>
+ </div>
+ <div class="box6">
+ <h2>Higher Age</h2>
+ <pre>
+ const highAge = (N, Arr) => 
+{
+  let arr = [];
+  for(let i=0; i < N; i++){
+  if(Arr[i]>=18){
+  arr.push(Arr[i])
+  }
+  }
+  return arr  
+};
+</pre>
+ </div>
+ <div class="box7">
+ <h2>Increment the Array Elements</h2>
+ <pre>
+const Inc_Arr = (array,N) => 
+{
+   for(let i=0; i < N; i++){
+  array[i] += 1;
+  console.log(array[i])
+  }
+        
+};
+</pre>
+ </div>
+ <div class="box8">
+ <h2>Pass or Fail</h2>
+ <pre>
+ const isAllPass = (N, Arr) => 
+{
+  for(let i=0; i < N; i++){
+  if(Arr[i]<32){
+  return "NO"
+  }
+  }
+  return "YES" 
+};
+</pre>
+ </div>
+ <div class="box9">
+ <h2>Unique Color Shirt</h2>
+ <pre>
+ function Unique_Shirts (arr,N) {
+ let count = 0;
+  for(let i=0; i < N; i++){
+  flag=0
+  for(let j=0; j < N; j++){
+  if(i!==j){
+  if(arr[i]===arr[j]){
+  flag = 1;
+  break;
+  }
+  }
+  }
+  if(!flag){
+  count += 1;
+  }
+  }
+  return count;
+          
+ 
+}
+</pre>
+ </div>
+ <div class="box10">
+ <h2>Min and Max</h2>
+ <pre>
+  function arrayMin(arr) {
+ let min = 10000;
+  for(let i=0; i < arr.length; i++){
+  if(arr[i]<min){
+  min = arr[i]
+  }
+  }
+  return min
+  }
+         
+ function arrayMax(arr) {
+ let max = -1;
+  for(let i=0; i < arr.length; i++){
+  if(arr[i]>max){
+  max = arr[i]
+  }
+  }
+  return max  
+ }            
+</pre>
+ </div>
+ <div class="box11">
+ <h2>Birthday Game</h2>
+ <pre>
+ function Birthday_Game(arr,D ,M) {
+ let count = 0;
+  for(let i=0; i <= ((arr.length)-M); i++){
+  let bar_sum = 0;
+  for(let j=0; j < M; j++){
+  bar_sum += arr[j+i];
+  }
+  if(bar_sum===D){
+  count += 1;
+  }
+  }
+  return count;
+}
+</pre>
+ </div>
+    </div>
+    </div>
+    </body>
+    </html>
